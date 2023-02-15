@@ -9,7 +9,7 @@ body {
 	/* background: #6cc3d5; */
 	background-color: #74EBD5;
 	/* background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); */
-	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(222,168,248,1) 0%, rgba(168,222,248,1) 21.8%, rgba(189,250,205,1) 35.6%, rgba(243,250,189,1) 52.9%, rgba(250,227,189,1) 66.8%, rgba(248,172,172,1) 90%, rgba(254,211,252,1) 99.7% );
+	background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(222, 168, 248, 1) 0%, rgba(168, 222, 248, 1) 21.8%, rgba(189, 250, 205, 1) 35.6%, rgba(243, 250, 189, 1) 52.9%, rgba(250, 227, 189, 1) 66.8%, rgba(248, 172, 172, 1) 90%, rgba(254, 211, 252, 1) 99.7%);
 	/* font-family: 'Montserrat', sans-serif;
 	color: #343a40; */
 }
@@ -23,7 +23,7 @@ body {
 	gap: 15px;
 	grid-template-columns: repeat(auto-fill, 265px);
 	height: 100vh;
-	
+
 }
 
 .wrapper li {
@@ -43,7 +43,7 @@ body {
 /* button add box */
 .add-box,
 .icon,
-/* .buttom-content, */
+.buttom-content,
 .settings .menu li {
 	display: flex;
 	align-items: center;
@@ -100,15 +100,17 @@ body {
 
 .buttom-content .settings {
 	font-size: 14px;
+	color: #212529;
 	cursor: pointer;
 }
 
-.settings {
+/* .settings {
 	position: relative;
+	 left: 50%;
 	width: 400px;
 	transform: translate(-50%, -50%);
 
-}
+} */
 
 .modal-form .content {
 	background: #fff;
@@ -199,11 +201,6 @@ input[type="text"] {
 	background: #007bff;
 }
 
-/* использовать при создании модального окна */
-/* .settings i {
-	display: none;
-} */
-
 /* button */
 .btn_add {
 	width: fit-content;
@@ -217,6 +214,10 @@ input[type="text"] {
 
 .settings:hover .menu {
 	transform: scale(1);
+}
+
+.settings {
+	position: relative;
 }
 
 .settings .menu {
@@ -260,10 +261,7 @@ input[type="text"] {
 	height: 100%;
 	width: 100%;
 	/* background: #ced4da; */
-	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(222,168,248,1) 0%, rgba(168,222,248,1) 21.8%, rgba(189,250,205,1) 35.6%, rgba(243,250,189,1) 52.9%, rgba(250,227,189,1) 66.8%, rgba(248,172,172,1) 90%, rgba(254,211,252,1) 99.7% );
-	
-
-
+	background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(222, 168, 248, 1) 0%, rgba(168, 222, 248, 1) 21.8%, rgba(189, 250, 205, 1) 35.6%, rgba(243, 250, 189, 1) 52.9%, rgba(250, 227, 189, 1) 66.8%, rgba(248, 172, 172, 1) 90%, rgba(254, 211, 252, 1) 99.7%);
 }
 
 /* The Close Button */
@@ -271,15 +269,14 @@ input[type="text"] {
 	float: right;
 	font-size: 30px;
 	font-weight: bold;
- }
- 
- .close:hover,
- .close:focus {
+}
+
+.close:hover,
+.close:focus {
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
- }
-
+}
 
 .modal-window .modal-form {
 	position: absolute;
@@ -288,7 +285,6 @@ input[type="text"] {
 	z-index: 1;
 	width: 400px;
 	transform: translate(-50%, -50%);
-
 }
 
 .modal-form .content {
@@ -301,8 +297,6 @@ input[type="text"] {
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 10px;
-
-
 }
 
 .modal-form .content header {
@@ -379,11 +373,6 @@ input[type="text"] {
 	border-radius: 4px;
 	/* background: #007bff; */
 	background: #D939CD;
-}
-
-/* использовать при создании модального окна */
-.settings i {
-	display: none;
 }
 
 /* button */

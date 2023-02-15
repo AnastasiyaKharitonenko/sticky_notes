@@ -7,8 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../sticky_notes/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://kit.fontawesome.com/8d47948ab6.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://kit.fontawesome.com/8d47948ab6.css" crossorigin="anonymous">
 	<title>Sticky Notes</title>
@@ -28,7 +27,7 @@
 					<form action="#">
 						<div class="row title">
 							<label> Title: </label>
-							<input type="text">
+							<input id="title-note" type="text">
 						</div>
 						<div class="row description">
 							<label> Description:
@@ -40,8 +39,6 @@
 				</div>
 			</div>
 		</div>
-
-
 		<li class="add-box">
 			<div class="icon"><i class="fa-solid fa-plus fa-lg"></i></div>
 			<p>Add a new note</p>
@@ -49,7 +46,8 @@
 		<li class="note">
 			<div class="details">
 				<p>Title</p>
-				<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quis ex perspiciatis est distinctio
+				<span id="descInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quis ex perspiciatis
+					est distinctio
 					voluptatum voluptatem sint saepe nesciunt necessitatibus?</span>
 			</div>
 			<div class="buttom-content">
@@ -63,7 +61,7 @@
 				</div>
 			</div>
 		</li>
-		<li class="note">
+		<!-- <li class="note">
 			<div class="details">
 				<p>Title</p>
 				<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quis ex perspiciatis est distinctio
@@ -101,8 +99,8 @@
 					<i class="fa-solid fa-ellipsis fa-lg"></i>
 				</div>
 			</div>
-		</li>
-		<li class="note">
+		</li> -->
+		<!-- <li class="note">
 			<div class="details">
 				<p>Title</p>
 				<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quis ex perspiciatis est distinctio
@@ -127,11 +125,9 @@
 					<i class="fa-solid fa-ellipsis fa-lg"></i>
 				</div>
 			</div>
-		</li>
+		</li> -->
 	</div>
 	<script src="../sticky_notes/script.js"></script>
-	<script src="https://kit.fontawesome.com/8d47948ab6.js" crossorigin="anonymous"></script>
-	<!-- <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script> -->
 </body>
 
 </html>
