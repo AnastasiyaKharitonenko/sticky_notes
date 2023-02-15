@@ -6,6 +6,7 @@
 }
 
 body {
+	
 	/* background: #6cc3d5; */
 	background-color: #74EBD5;
 	/* background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); */
@@ -43,11 +44,16 @@ body {
 /* button add box */
 .add-box,
 .icon,
-.buttom-content,
 .settings .menu li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.buttom-content {
+	display: flex;
+	justify-content: space-between;
+
 }
 
 .add-box {
@@ -99,18 +105,20 @@ body {
 }
 
 .buttom-content .settings {
+	margin-top: 10px;
 	font-size: 14px;
 	color: #212529;
 	cursor: pointer;
+
 }
 
-/* .settings {
+.settings {
 	position: relative;
-	 left: 50%;
-	width: 400px;
+	left: 50%;
+	width: 100px;
 	transform: translate(-50%, -50%);
 
-} */
+}
 
 .modal-form .content {
 	background: #fff;
@@ -212,7 +220,7 @@ input[type="text"] {
 	transition: 0.2s ease;
 }
 
-.settings:hover .menu {
+.settings.show .menu {
 	transform: scale(1);
 }
 
@@ -223,7 +231,7 @@ input[type="text"] {
 .settings .menu {
 	position: absolute;
 	bottom: 0;
-	right: -5px;
+	/* right: -55px; */
 	padding: 5px 0;
 	background: #f8f9fa;
 	border-radius: 4px;
